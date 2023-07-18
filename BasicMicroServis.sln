@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{E3549291-7384-427F-B05D-2459D2166E1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{52EA83C6-C4F1-49DF-A791-CB41E9E9E053}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{1D1EB76B-9D55-4D29-9A89-9C5A0E0C1C1E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Discount", "Discount", "{84E2E526-4F6D-4FD8-8D64-43E209192543}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FakePayment", "FakePayment", "{0EBA698D-966E-43B3-8751-EC7D7291B240}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Order", "Order", "{C48CD8C6-3B68-4C60-8DFC-10B3CF1BD7A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PhotoStock", "PhotoStock", "{7C0B7C91-3ED6-4965-8F8B-FDA990444988}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{CC8340AC-4F7F-4F2C-8F7A-C6F110EDE249}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{C2537582-4C26-49F2-8FBA-EBD6151D66BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{0044666F-7882-44AB-A912-8EBD683AFA6F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutionitems", "Solutionitems", "{F56C6A73-0FA3-45D2-B160-9E8C3382B083}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inspimo_Microservice.Services.Catalog", "Services\Catalog\Inspimo_Microservice.Services.Catalog\Inspimo_Microservice.Services.Catalog.csproj", "{6221A12F-F803-4599-B8CA-7DB20D0420EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inspimo_MicroService.Shared", "Shared\Inspimo_MicroService.Shared\Inspimo_MicroService.Shared.csproj", "{A37E1E2A-AFEF-42B1-8061-FD2B26E84519}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6221A12F-F803-4599-B8CA-7DB20D0420EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6221A12F-F803-4599-B8CA-7DB20D0420EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6221A12F-F803-4599-B8CA-7DB20D0420EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6221A12F-F803-4599-B8CA-7DB20D0420EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A37E1E2A-AFEF-42B1-8061-FD2B26E84519}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A37E1E2A-AFEF-42B1-8061-FD2B26E84519}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A37E1E2A-AFEF-42B1-8061-FD2B26E84519}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A37E1E2A-AFEF-42B1-8061-FD2B26E84519}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{52EA83C6-C4F1-49DF-A791-CB41E9E9E053} = {E3549291-7384-427F-B05D-2459D2166E1F}
+		{1D1EB76B-9D55-4D29-9A89-9C5A0E0C1C1E} = {E3549291-7384-427F-B05D-2459D2166E1F}
+		{84E2E526-4F6D-4FD8-8D64-43E209192543} = {E3549291-7384-427F-B05D-2459D2166E1F}
+		{0EBA698D-966E-43B3-8751-EC7D7291B240} = {E3549291-7384-427F-B05D-2459D2166E1F}
+		{C48CD8C6-3B68-4C60-8DFC-10B3CF1BD7A1} = {E3549291-7384-427F-B05D-2459D2166E1F}
+		{7C0B7C91-3ED6-4965-8F8B-FDA990444988} = {E3549291-7384-427F-B05D-2459D2166E1F}
+		{6221A12F-F803-4599-B8CA-7DB20D0420EB} = {1D1EB76B-9D55-4D29-9A89-9C5A0E0C1C1E}
+		{A37E1E2A-AFEF-42B1-8061-FD2B26E84519} = {CC8340AC-4F7F-4F2C-8F7A-C6F110EDE249}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0B12619-0EEA-465D-93B6-1455D1F83776}
+	EndGlobalSection
+EndGlobal
