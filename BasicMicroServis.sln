@@ -25,9 +25,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{00
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutionitems", "Solutionitems", "{F56C6A73-0FA3-45D2-B160-9E8C3382B083}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inspimo_Microservice.Services.Catalog", "Services\Catalog\Inspimo_Microservice.Services.Catalog\Inspimo_Microservice.Services.Catalog.csproj", "{6221A12F-F803-4599-B8CA-7DB20D0420EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inspimo_Microservice.Services.Catalog", "Services\Catalog\Inspimo_Microservice.Services.Catalog\Inspimo_Microservice.Services.Catalog.csproj", "{6221A12F-F803-4599-B8CA-7DB20D0420EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inspimo_MicroService.Shared", "Shared\Inspimo_MicroService.Shared\Inspimo_MicroService.Shared.csproj", "{A37E1E2A-AFEF-42B1-8061-FD2B26E84519}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inspimo_MicroService.Shared", "Shared\Inspimo_MicroService.Shared\Inspimo_MicroService.Shared.csproj", "{A37E1E2A-AFEF-42B1-8061-FD2B26E84519}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
