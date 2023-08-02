@@ -2,6 +2,7 @@ using Inspimo_Microservice.Services.Catalog.Services.Abstract;
 using Inspimo_Microservice.Services.Catalog.Services.Concrete;
 using Inspimo_Microservice.Services.Catalog.Settings.Abstract;
 using Inspimo_Microservice.Services.Catalog.Settings.Concrete;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,11 +32,11 @@ namespace Inspimo_Microservice.Services.Catalog
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IProductService, ProductService>();
             services.AddAutoMapper(typeof(Startup));
             services.Configure<DataBaseSettings>(Configuration.GetSection("DataBaseSettings"));
-
             services.AddSingleton<IDataBaseSettings>(sp =>
             {
                 return sp.GetRequiredService<IOptions<DataBaseSettings>>().Value;
@@ -61,9 +62,8 @@ namespace Inspimo_Microservice.Services.Catalog
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
